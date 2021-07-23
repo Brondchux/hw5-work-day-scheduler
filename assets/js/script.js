@@ -4,7 +4,6 @@
 
 // DATA ====================================================
 let currentHour = moment().format("HH");
-console.log(currentHour);
 
 // FUNCTIONS ===============================================
 // Display the current day
@@ -52,6 +51,9 @@ function createTimeBlock(theTime) {
 	timeBlockRow.append(timeBlockTextareaCol);
 	timeBlockRow.append(timeBlockSaveCol);
 	$(".container").append(timeBlockRow);
+
+	// Add action to save btn
+	timeBlockSave.on("click", saveTask);
 }
 
 // Display work hours
@@ -60,6 +62,12 @@ function workingHours() {
 		let dateVal = moment().add(i, "hours").format();
 		createTimeBlock(dateVal);
 	}
+}
+
+// Save task to local storage
+function saveTask() {
+	let hr = $(this).parent().find(".hour");
+	console.log("you clicked me: ", hr);
 }
 
 // INITIALIZATION ==========================================
