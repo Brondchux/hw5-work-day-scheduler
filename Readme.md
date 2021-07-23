@@ -1,4 +1,4 @@
-# HW4 Code Quiz - Project
+# HW5 Work Day Scheduler - Project
 
 ## Project Description
 
@@ -8,14 +8,14 @@ This project is intended run as a day scheduler, to help us keep track of what w
 
 ## Table of Content
 
-1. [Project Description](https://github.com/Brondchux/hw4-code-quiz#project-description)
-2. [Author Info](https://github.com/Brondchux/hw4-code-quiz#author-info)
-3. [User Story](https://github.com/Brondchux/hw4-code-quiz#user-story)
-4. [Acceptance Criteria](https://github.com/Brondchux/hw4-code-quiz#acceptance-criteria)
-5. [Mock-Up Preview](https://github.com/Brondchux/hw4-code-quiz#mock-up-preview)
-6. [Useful Links](https://github.com/Brondchux/hw4-code-quiz#useful-links)
-7. [Credits](https://github.com/Brondchux/hw4-code-quiz#credits)
-8. [Licence](https://github.com/Brondchux/hw4-code-quiz#licence)
+1. [Project Description](https://github.com/Brondchux/hw5-work-day-scheduler#project-description)
+2. [Author Info](https://github.com/Brondchux/hw5-work-day-scheduler#author-info)
+3. [User Story](https://github.com/Brondchux/hw5-work-day-scheduler#user-story)
+4. [Acceptance Criteria](https://github.com/Brondchux/hw5-work-day-scheduler#acceptance-criteria)
+5. [Mock-Up Preview](https://github.com/Brondchux/hw5-work-day-scheduler#mock-up-preview)
+6. [Useful Links](https://github.com/Brondchux/hw5-work-day-scheduler#useful-links)
+7. [Credits](https://github.com/Brondchux/hw5-work-day-scheduler#credits)
+8. [Licence](https://github.com/Brondchux/hw5-work-day-scheduler#licence)
 
 ---
 
@@ -69,8 +69,8 @@ The following animation demonstrates the application functionality:
 
 ## Useful Links
 
-1. 🗂 [Click me to view github repository for this project](https://github.com/Brondchux/hw4-code-quiz)
-2. 🌍 [Click me to view deployed application on github pages](https://brondchux.github.io/hw4-code-quiz/)
+1. 🗂 [Click me to view github repository for this project](https://github.com/Brondchux/hw5-work-day-scheduler/)
+2. 🌍 [Click me to view deployed application on github pages](https://brondchux.github.io/hw5-work-day-scheduler/)
 
 ---
 
