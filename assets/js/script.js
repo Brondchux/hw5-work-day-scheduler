@@ -3,7 +3,6 @@
 // DEPENDENCIES (DOM Elements) =============================
 
 // DATA ====================================================
-let currentHour = moment().format("HH");
 
 // FUNCTIONS ===============================================
 // Display the current day
@@ -22,17 +21,19 @@ function createTimeBlock(theTime) {
 	let timeBlockHour = $("<span class='hour-area'></span>");
 	let timeBlockTextareaCol = $("<div class='col-10 past px-0'>");
 	let timeBlockTextarea = $(
-		"<textarea name='' class='task-area description' id='' rows='4'></textarea>"
+		"<textarea name='' class='task-area description todoBlock' id='' rows='4'></textarea>"
 	);
 	let timeBlockSaveCol = $("<div class='col-1 save-btn d-flex'>");
 	let timeBlockSave = $("<i class='fas fa-save m-auto fa-lg'></i>");
 
 	// Add classes based on current hour
 
-	let militaryTime = moment(theTime).format("HH");
-	if (currentHour === militaryTime) {
+	let militaryTime = parseInt(moment().format("HH"));
+	theTime = parseInt(theTime);
+
+	if (theTime === militaryTime) {
 		timeBlockTextarea.addClass("present");
-	} else if (militaryTime > currentHour) {
+	} else if (theTime > militaryTime) {
 		timeBlockTextarea.addClass("future");
 	} else {
 		// Not relevant as we already defaulted the class to past
@@ -42,7 +43,7 @@ function createTimeBlock(theTime) {
 	// Build
 	timeBlockHourCol = timeBlockHourCol
 		.append(timeBlockHour)
-		.text(`${moment(theTime).format("hA")}`);
+		.text(`${theTime > 11 ? `${theTime} PM` : `${theTime} AM`}`);
 	timeBlockTextareaCol = timeBlockTextareaCol.append(timeBlockTextarea);
 	timeBlockSaveCol = timeBlockSaveCol.append(timeBlockSave);
 
@@ -58,16 +59,16 @@ function createTimeBlock(theTime) {
 
 // Display work hours
 function workingHours() {
-	for (let i = 0; i < 8; i++) {
-		let dateVal = moment().add(i, "hours").format();
-		createTimeBlock(dateVal);
+	for (let i = 9; i <= 17; i++) {
+		createTimeBlock(i);
 	}
 }
 
 // Save task to local storage
 function saveTask() {
-	let hr = $(this).parent().find(".hour");
-	console.log("you clicked me: ", hr);
+	let textAreaVal = $(".todoBlock").val();
+	let hourVal = $(".hour-area").text();
+	console.log("you typed: ", textAreaVal, " at ", hourVal);
 }
 
 // INITIALIZATION ==========================================
