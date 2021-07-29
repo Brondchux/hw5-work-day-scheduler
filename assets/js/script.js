@@ -21,7 +21,7 @@ function createTimeBlock(theTime) {
 	let timeBlockHour = $("<span class='hour-area'></span>");
 	let timeBlockTextareaCol = $("<div class='col-10 past px-0'>");
 	let timeBlockTextarea = $(
-		"<textarea name='' class='task-area description todo-block' id='' rows='4'></textarea>"
+		"<textarea name='' class='task-area description todo-block text-dark' id='' rows='4'></textarea>"
 	);
 	let timeBlockSaveCol = $("<div class='col-1 save-btn d-flex'>");
 	let timeBlockSave = $("<i class='fas fa-save m-auto fa-lg save-button'></i>");
@@ -47,7 +47,13 @@ function createTimeBlock(theTime) {
 	timeBlockSaveCol = timeBlockSaveCol.append(timeBlockSave);
 
 	// Retrieve todos
+	let retrievedTodo = fetchTodo(timeText);
 	timeBlockTextarea.val(fetchTodo(timeText));
+
+	// Apply a light blue border color to notify user of a saved todo
+	if (retrievedTodo) {
+		timeBlockTextarea.addClass("border border-5 border-info");
+	}
 
 	// Place
 	timeBlockRow.append(timeBlockHourCol);
@@ -71,6 +77,13 @@ function workingHours() {
 function saveTask() {
 	let textAreaVal = $(this).parent().parent().find(".todo-block").val();
 	let hourVal = $(this).parent().parent().find(".hour").text();
+
+	// Apply a green border color to let user no todo is now saved
+	$(this)
+		.parent()
+		.parent()
+		.find(".todo-block")
+		.addClass("border border-success");
 
 	// Store in localstorage
 	localStorage.setItem(`${hourVal}`, `${textAreaVal}`);
