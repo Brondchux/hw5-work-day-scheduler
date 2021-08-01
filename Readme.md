@@ -14,8 +14,9 @@ This project is intended run as a day scheduler, to help us keep track of what w
 4. [Acceptance Criteria](https://github.com/Brondchux/hw5-work-day-scheduler#acceptance-criteria)
 5. [Mock-Up Preview](https://github.com/Brondchux/hw5-work-day-scheduler#mock-up-preview)
 6. [Useful Links](https://github.com/Brondchux/hw5-work-day-scheduler#useful-links)
-7. [Credits](https://github.com/Brondchux/hw5-work-day-scheduler#credits)
-8. [Licence](https://github.com/Brondchux/hw5-work-day-scheduler#licence)
+7. [Tech Stack](https://github.com/Brondchux/hw5-work-day-scheduler#tech-stack)
+8. [Credits](https://github.com/Brondchux/hw5-work-day-scheduler#credits)
+9. [Licence](https://github.com/Brondchux/hw5-work-day-scheduler#licence)
 
 ---
 
@@ -74,6 +75,15 @@ The following animation demonstrates the application functionality:
 
 ---
 
+## Tech Stack
+
+![html5 logo](./assets/images/techs/html5.png)
+![css3 logo](./assets/images/techs/css3.png)
+![jquery logo](./assets/images/techs/jquery.png)
+![github logo](./assets/images/techs/github.png)
+
+---
+
 ## Credits
 
 Appreciations to Ben 🙌🏾 of [Columbia University Coding Bootcamp](https://bootcamp.cvn.columbia.edu/coding/landing-ftpt/?s=Google-Brand&msg_cv_scta=4&msg_cv_stbn=1&msg_cv_fcta=1&dki=Learn%20Coding&pkw=%2Bcolumbia%20%2Bcoding%20%2Bbootcamp&pcrid=471112563836&pmt=b&utm_source=google&utm_medium=cpc&utm_campaign=GGL%7CCOLUMBIA-UNIVERSITY%7CSEM%7CCODING%7C-%7COFL%7CTIER-1%7CALL%7CBRD%7CBMM%7CCore%7CBootcamp&utm_term=%2Bcolumbia%20%2Bcoding%20%2Bbootcamp&s=google&k=%2Bcolumbia%20%2Bcoding%20%2Bbootcamp&utm_adgroupid=111600049635&utm_locationphysicalms=9067609&utm_matchtype=b&utm_network=g&utm_device=c&utm_content=471112563836&utm_placement=&gclid=CjwKCAjwlrqHBhByEiwAnLmYUA8CIItksRJF6IT6XMX8WOOJBO-jtCRkzXZhI2gvsZrFEpYdRXy54RoC6jQQAvD_BwE&gclsrc=aw.ds) for being our tutor in this bootcamp.
@@ -84,4 +94,4 @@ Special thanks to [Google](https://www.google.com) for helping me find the accur
 
 ## Licence
 
-Coming soon!
+MIT
