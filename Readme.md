@@ -78,7 +78,7 @@ The following animation demonstrates the application functionality:
 ## Tech Stack
 
 ![html5 logo](./assets/images/techs/html5.png)
-![css3 logo](./assets/images/techs/css3.png)
+![bootstrap logo](./assets/images/techs/bootstrap.png)
 ![jquery logo](./assets/images/techs/jquery.png)
 ![github logo](./assets/images/techs/github.png)
 
